@@ -2,6 +2,12 @@
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
+created with
+```shell script
+quarkus create app com.zijian:quarkus-cmd-s --no-code --kotlin --gradle-kotlin-dsl
+quarkus ext add amazon-s3
+```
+
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
 ## Running the application in dev mode

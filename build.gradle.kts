@@ -15,11 +15,13 @@ val quarkusPlatformVersion: String by project
 
 dependencies {
     implementation("io.quarkiverse.amazonservices:quarkus-amazon-s3")
+    implementation("software.amazon.awssdk:url-connection-client")
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:quarkus-amazon-services-bom:${quarkusPlatformVersion}"))
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.quarkus:quarkus-arc")
+    implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
     testImplementation("io.quarkus:quarkus-junit5")
 }
 
