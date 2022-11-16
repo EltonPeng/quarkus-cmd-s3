@@ -23,6 +23,7 @@ dependencies {
     implementation("io.quarkus:quarkus-arc")
     implementation("io.github.microutils:kotlin-logging-jvm:3.0.4")
     testImplementation("io.quarkus:quarkus-junit5")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
 }
 
 group = "com.zijian"

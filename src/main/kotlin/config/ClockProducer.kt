@@ -1,4 +1,4 @@
-package com.zijian
+package com.zijian.config
 
 import java.time.Clock
 import java.time.Instant.EPOCH
