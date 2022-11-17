@@ -11,5 +11,5 @@ class ClockProducer {
 
     @get:Produces
     val clock: Clock
-        get() = Clock.fixed(EPOCH, ZoneId.of("UTC"))
+        get() = Clock.systemUTC()
 }
