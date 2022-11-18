@@ -10,6 +10,6 @@ class HelloMainTest {
     @Test
     @Launch("World")
     fun testLaunchCommand(result: LaunchResult) {
-        Assertions.assertTrue(result.getOutput().contains("Hello you"))
+        Assertions.assertTrue(result.getOutput().contains("Hello you - 1970-01-01T00:00:00Z"))
     }
 }

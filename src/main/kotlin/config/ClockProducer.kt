@@ -6,7 +6,6 @@ import java.time.ZoneId
 import javax.enterprise.context.ApplicationScoped
 import javax.enterprise.inject.Produces
 
-@ApplicationScoped
 class ClockProducer {
 
     @get:Produces

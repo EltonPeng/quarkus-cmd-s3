@@ -1,16 +1,14 @@
 package config
 
-import io.quarkus.arc.Priority
 import java.time.Clock
 import java.time.Instant
 import java.time.ZoneId
-import javax.enterprise.context.ApplicationScoped
+import javax.annotation.Priority
 import javax.enterprise.inject.Alternative
 import javax.enterprise.inject.Produces
 
-//@ApplicationScoped
-//@Priority
 @Alternative
+@Priority(1)
 class ClockAlternative {
 
     @get:Produces
