@@ -5,8 +5,11 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
+    maven {
+        setUrl("https://maven.aliyun.com/repository/public/")
+    }
     mavenLocal()
+    mavenCentral()
 }
 
 val quarkusPlatformGroupId: String by project
